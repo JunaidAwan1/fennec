@@ -1,7 +1,17 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
+a{
+color:#000;
+text-decoration: none;
+}
+a:hover{
+color:#00494f;
+}
 .navbar {
   background-color: #00494f;
 }
