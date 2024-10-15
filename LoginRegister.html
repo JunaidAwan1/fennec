@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="asset/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="http://127.0.0.1:5500/index.html" style="text-decoration: none;">
+            <img
+              src="asset/Capture-removebg-preview.png"
+              alt="Fennec Logo"
+              style="max-width: 100%; margin-right: 10px;"
+            />
+            <span style="font-size: 1.7rem; font-weight: bold; color: inherit;">Fennec</span>
+          </a>
+        <button
+          id="menuToggle"
+          class="navbar-toggler"
+          type="button"
+          style="display: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex mx-lg-auto my-lg-0 flex-column flex-lg-row w-100 justify-content-center custom-form ">
+            <div class="input-group w-50 me-lg-1 mb-2 mb-lg-0 custom-form ">
+              <span class=" input-group-text bg-white border-0 rounded-0">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input
+                class="form-control p-2 rounded-0 search-input"
+                type="search"
+                placeholder="Search Fennec"
+                aria-label="Search"
+              />
+            </div>
+            <div class="input-group w-25 mb-2 mb-lg-0 custom-form-location ">
+                <span class="input-group-text rounded-0 bg-light border-0">
+                  <i class="fa-solid fa-location-dot me-2"></i>
+                </span>
+                <select class="form-select rounded-0 location-select custom-select">
+                  <option selected>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Germany</option>
+                </select>
+              </div>
+            <button class="btn btn-success rounded-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass fa-magnifying-glass2"></i>
+            </button>
+          </form> 
+          
+          <div class="d-flex custom-loginRegister">
+            <a href="http://127.0.0.1:5500/LoginRegister.html" class="btn custom-btn me-2 mb-lg-0 d-flex flex-column align-items-center">
+              <i class="fa-solid fa-dollar-sign mb-1"></i>
+              <span class="new-btn">Sell</span>
+            </a>
+            <a href="http://127.0.0.1:5500/LoginRegister.html" class="btn custom-btn d-flex flex-column align-items-center">
+              <i class="fa-solid fa-user mb-1 "></i>
+              <span class="new-btn">Login/Register</span>
+            </a>
+          </div>
+      </div>
+    </nav>
+    <!-- mobile ka  h -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Post an Ad</a>
+      <a href="#">Manage my Ads</a>
+      <a href="#">Messages</a>
+      <a href="#">Favourites</a>
+      <a href="#">My Alerts</a>
+      <a href="#">My Details</a>
+      <a href="#">Manage my Job Ads</a>
+      <a href="#">Help & Contact</a>
+      <a href="#">Login</a>
+    </div>
+    
+  <div class="nav-sub-menu-ct">
+    <div class="nav-menu-32323">
+      <div class="nav-menu-3344343">
+    <div class="nav-sub-menu-inn1">
+    <div class="nav-men-sub-ct-inn">
+      <ul>
+    <li class="car-vhcl-menu"><a href="http://127.0.0.1:5500/CarsVehicles.html">Cars & Vehicles</a></li>
+    <li class="for-sale-menu"><a href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+    <li class="property21"><a href="http://127.0.0.1:5500/property.html">Property</a></li>
+    <li class="jobs21"><a href="http://127.0.0.1:5500/job.html">Jobs  </a></li>
+    <li class="Services21"><a href="http://127.0.0.1:5500/Services.html">Services  </a></li>
+    <li class="Community21"><a href="http://127.0.0.1:5500/Community.html">Community</a></li>
+    <li class="Pets21"><a href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+  </ul>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  <!-- ................................................... nav bar sub menu 1........................................................................... -->
+    <div class="nav-snmn">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="http://127.0.0.1:5500/forsale.html">Cars</a></li>
+          <li>
+            <a class="" href="#">Motorbikes & Scooters</a>
+          </li>
+          <li><a class="" href="#">Vans</a></li>
+          <li>
+            <a class="" href="#">Campervans & Motorhomes</a>
+          </li>
+          <li><a class="" href="#">Caravans</a></li>
+          <li><a class="" href="#">Trucks</a></li>
+          </ul>
+          <ul>
+          <li><a class="" href="#">Plant & Tractors</a></li>
+          <li><a class="" href="#">Other Vehicles</a></li>
+          <li><a class="" href="#">Accessories</a></li>
+          <li><a class="" href="#">Parts</a></li>
+          <li><a class="" href="#">Wanted</a></li>
+        <ul>
+      </div>
+      </div>
+      <div class="div-main-sec2-sub">
+        <div class="div-main-sec2-sub-inner">
+        <div class="div-main-sec2-sub-inner5413541">
+        <h2>Discover more in our guides</h2>
+        <div class="div-main-sec2-submenu-2">
+      <ul>
+        <li><a href="#">Car Guides</a></li>
+        <li><a href="#">
+          Car Reviews</a></li>
+        <li><a href="#">Best Cars</a></li>
+        <li><a href="#">Car Advice  </a></li>
+        </ul>
+  </div>
+  </div>
+      <div class="div-img-right-submenu">
+        <img src="./asset/cars-guide.84c7d8c8754c04a88117e49a84535413 (1).png" alt="">
+      </div>
+   
+  </div>
+  </div>
+  </div>
+    </div>
+  
+  <!-- ................................................... nav bar sub menu 2........................................................................... -->
+  <div class="nav-snmn2">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Appliances</a></li>
+        <li>
+          <a class="" href="#">Audio & Stereo </a>
+        </li>
+        <li><a class="" href="#">Baby & Kids Stuff</a></li>
+        <li>
+          <a class="" href="#">
+            Cameras, Camcorders & Studio Equipment</a>
+        </li>
+        <li><a class="" href="#">Christmas Decorations</a></li>
+        <li><a class="" href="#">Clothes, Footwear & Accessories</a></li>
+  
+        </ul>
+      <ul>
+        <li><a class="" href="#">Computers & Software</a></li>
+        <li>
+          <a class="" href="#">DIY Tools & Materials </a>
+        </li>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li>
+          <a class="" href="#">
+            Home & Garden</a>
+        </li>
+        <li><a class="" href="#">House Clearance</a></li>
+        <li><a class="" href="#">Music, Films, Books & Games</a></li>
+  
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+          Musical Instruments & DJ Equipment</a></li>
+        <li>
+          <a class="" href="#">Office Furniture & Equipment </a>
+        </li>
+        <li><a class="" href="#">
+          Phones, Mobile Phones & Telecoms</a></li>
+        <li>
+          <a class="" href="#">
+            Sports, Leisure & Travel</a>
+        </li>
+        <li><a class="" href="#">Tickets</a></li>
+        <li><a class="" href="#">
+          TV, DVD, Blu-Ray & Videos</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Video Games & Consoles</a></li>
+        <li>
+          <a class="" href="#">Freebies </a>
+        </li>
+        <li><a class="" href="#">Other Goods</a></li>
+        <li>
+          <a class="" href="#">
+            Stuff Wanted</a>
+        </li>
+        <li><a class="" href="#"> Swap Shop</a></li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+  </div>
+  
+  
+  
+  <!-- ................................................... nav bar sub menu 3........................................................................... -->
+  <div class="nav-snmn3">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+        <li>
+          <a class="" href="#">To Rent</a>
+        </li>
+        <li><a class="" href="#">To Share</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">To Swap</a></li>
+        <li>
+          <a class="" href="#">Commercial</a>
+        </li>
+        <li><a class="" href="#">Parking & Garage</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+          International</a></li>
+        <li>
+          <a class="" href="#">Holiday Rentals </a>
+        </li>
+        <li><a class="" href="#">Property Wanted</a></li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 4........................................................................... -->
+  <div class="nav-snmn4">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Accountancy</a></li>
+        <li>
+          <a class="" href="#">Admin, Secretarial & PA</a>
+        </li>
+        <li><a class="" href="#">Agriculture & Farming</a></li>
+        <li><a class="" href="#">Childcare</a></li>
+        <li><a class="" href="#">Computing & IT</a></li>
+       
+  
+        </ul>
+      <ul>
+        <li><a class="" href="#">Animals</a></li>
+        <li>
+          <a class="" href="#">Arts & Heritage</a>
+        </li>
+        <li><a class="" href="#">Charity</a></li>
+        <li><a class="" href="#">Construction & Property</a></li>
+        <li><a class="" href="#">Customer Service & Call Centre</a></li>
+      </ul>
+      <ul>
+        <li><a class="" href="#">
+          Financial Services</a></li>
+        <li>
+          <a class="" href="#">Gardening </a>
+        </li>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li><a class="" href="#">
+          Driving & Automotive</a></li>
+        <li><a class="" href="#">Engineering</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+          Legal</a></li>
+        <li>
+          <a class="" href="#">Leisure & Tourism </a>
+        </li>
+        <li><a class="" href="#">Manufacturing & Industrial</a></li>
+        <li><a class="" href="#">
+          Marketing, Advertising & PR</a></li>
+        <li><a class="" href="#">
+          Media, Digital & Creative</a></li>
+        </ul>
+    </div>
+    </div> 
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 5........................................................................... -->
+  <div class="nav-snmn5">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Accountancy</a></li>
+        <li>
+          <a class="" href="#">Admin, Secretarial & PA</a>
+        </li>
+        <li><a class="" href="#">Agriculture & Farming</a></li>
+        <li><a class="" href="#">Childcare</a></li>
+        <li><a class="" href="#">Computing & IT</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Animals</a></li>
+        <li>
+          <a class="" href="#">Arts & Heritage</a>
+        </li>
+        <li><a class="" href="#">Charity</a></li>
+        <li><a class="" href="#">Construction & Property</a></li>
+        <li><a class="" href="#">Customer Service & Call Centre</a></li>
+      </ul>
+      <ul>
+        <li><a class="" href="#">
+          Financial Services</a></li>
+        <li>
+          <a class="" href="#">Gardening </a>
+        </li>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li><a class="" href="#">
+          Driving & Automotive</a></li>
+        <li><a class="" href="#">Engineering</a></li>
+  </ul>
+      <ul>
+        <li><a class="" href="#">
+          Legal</a></li>
+        <li>
+          <a class="" href="#">Leisure & Tourism </a>
+        </li>
+        <li><a class="" href="#">Manufacturing & Industrial</a></li>
+        <li><a class="" href="#">
+          Marketing, Advertising & PR</a></li>
+        <li><a class="" href="#">
+          Media, Digital & Creative</a></li>
+        </ul>
+  </div>
+    </div> 
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 6........................................................................... -->
+  <div class="nav-snmn6">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Business & Office</a></li>
+        <li>
+          <a class="" href="#">Childcare</a>
+        </li>
+        <li><a class="" href="#">Clothing</a></li>
+        <li><a class="" href="#">Computers & Telecoms</a></li>
+      </ul>
+      <ul>
+        <li><a class="" href="#">Entertainment</a></li>
+        <li>
+          <a class="" href="#">Finance & Legal</a>
+        </li>
+        <li><a class="" href="#">
+          Food & Drink</a></li>
+        <li><a class="" href="#">Goods Suppliers & Retailers</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li>
+          <a class="" href="#">Motoring</a>
+        </li>
+        <li><a class="" href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+        <li><a class="" href="#">Driving & Automotive</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Property & Maintenance</a></li>
+        <li>
+          <a class="" href="#"> Tradesmen & Construction </a>
+        </li>
+        <li><a class="" href="#">Transport</a></li>
+        <li><a class="" href="#">Travel & Tourism</a></li> 
+  
+        </ul>
+    </div>
+    </div>
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 7........................................................................... -->
+  <div class="nav-snmn7">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Business & Office</a></li>
+        <li>
+          <a class="" href="#">Childcare</a>
+        </li>
+        <li><a class="" href="#">Clothing</a></li>
+        <li><a class="" href="#">Computers & Telecoms</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Entertainment</a></li>
+        <li>
+          <a class="" href="#">Finance & Legal</a>
+        </li>
+        <li><a class="" href="#">
+          Food & Drink</a></li>
+        <li><a class="" href="#">Goods Suppliers & Retailers</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+       
+  Health & Beauty</a></li>
+        <li>
+          <a class="" href="#">Motoring</a>
+        </li>
+        <li><a class="" href="#">Pets</a></li>
+        <li><a class="" href="#">Driving & Automotive</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Property & Maintenance</a></li>
+        <li>
+          <a class="" href="#"> Tradesmen & Construction </a>
+        </li>
+        <li><a class="" href="#">Transport</a></li>
+        <li><a class="" href="#">Travel & Tourism</a></li> 
+        </ul>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <!-- ----------------------------------------responsive menu ------------------------------ -->
+   <div class="respopnsive-menu321">
+  <div class="nav-menu-res-3344343">
+    <div class="nav-sub-menu-res-inn1">
+    <div class="nav-men-sub-res-ct-inn">
+      <ul>
+    <li class="car-vhcl-menu-res"><a href="http://127.0.0.1:5500/CarsVehicles.html">Cars & Vehicles</a></li>
+    <li class="for-sale-menu-res"><a href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+    <li class="property21-res"><a href="http://127.0.0.1:5500/property.html">Property</a></li>
+    <li class="jobs21-res"><a href="http://127.0.0.1:5500/job.html">Jobs  </a></li>
+    <li class="Services21-res"><a href="http://127.0.0.1:5500/Services.html">Services  </a></li>
+    <li class="Community21-res"><a href="http://127.0.0.1:5500/Community.html">Community</a></li>
+    <li class="Pets21-res"><a href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+  </ul>
+    </div>
+  </div>
+  </div>
+  
+  <div class="remenu-sub">
+    <div class="remenu-main-dw">
+      <div class="remenu-innnn">
+        <div class="div-sub-321">
+          <img class="crs-end" src="./asset/delete-button.png" alt="">
+         <h3> Cars & Vehicles</h3>
+        </div>
+        <h2>Browse by</h2>
+        <ul>
+          <li><a href="#">Business & Office</a></li>
+          <li><a href="#">Childcare</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Computers & Telecoms</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Finance & Legal</a></li>
+          <li><a href="#">Food & Drink</a></li>
+          <li><a href="#">Goods Suppliers & Retailers</a></li>
+          <li><a href="#">Health & Beauty</a></li>
+          <li><a href="#">Motoring</a></li>
+          </ul>
+         
+        <ul>
+          <li><a href="#">Business & Office</a></li>
+          <li><a href="#">Childcare</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Computers & Telecoms</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Finance & Legal</a></li>
+          <li><a href="#">Food & Drink</a></li>
+          <li><a href="#">Goods Suppliers & Retailers</a></li>
+          <li><a href="#">Health & Beauty</a></li>
+          <li><a href="#">Motoring</a></li>
+          </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+
+    <div
+      class="container-fluid bg-light min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="row w-100 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow border">
+            <div class="card-body">
+              <ul
+                class="nav nav-tabs justify-content-center"
+                id="loginTabs"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="login-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#login"
+                    type="button"
+                    role="tab"
+                    aria-controls="login"
+                    aria-selected="true"
+                  >
+                    LOGIN
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="register-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#register"
+                    type="button"
+                    role="tab"
+                    aria-controls="register"
+                    aria-selected="false"
+                  >
+                    REGISTER
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content mt-3" id="loginTabsContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="login"
+                  role="tabpanel"
+                  aria-labelledby="login-tab"
+                >
+                  <form>
+                    <div class="mb-3 text-center">
+                      <button class="btn btn-outline-dark w-100">
+                        <img
+                          src="https://www.google.com/favicon.ico"
+                          alt="Google icon"
+                          class="me-2"
+                          style="width: 20px; height: 20px"
+                        />
+                        Sign in with Google
+                      </button>
+                    </div>
+                    <div class="mb-3 text-center">
+                      <button class="btn btn-primary w-100">
+                        <i class="bi bi-facebook me-2"></i>
+                        Sign in with Facebook
+                      </button>
+                    </div>
+                    <div class="text-center mb-3">
+                      <hr class="divider" />
+                      <span class="text-muted">OR</span>
+                      <hr class="divider" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <div class="input-group">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          placeholder="Enter your password"
+                          required
+                        />
+                        <button
+                          class="btn btn-outline-secondary"
+                          type="button"
+                          onclick="togglePassword()"
+                        >
+                          Show
+                        </button>
+                      </div>
+                      <div class="text-end mt-1">
+                        <a href="#" class="text-decoration-none"
+                          >Forgot your password?</a
+                        >
+                      </div>
+                    </div>
+                    <div class="d-grid">
+                      <button type="submit" class="btn btn-success">
+                        Login
+                      </button>
+                    </div>
+                    <p class="text-muted text-center mt-3 small">
+                      *By using social login, you agree to our Terms &
+                      Conditions and Privacy Notice.
+                    </p>
+                  </form>
+                  <div class="card mt-3 shadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Welcome to Fennec.</h5>
+                      <p class="card-text">Sign in or Register to:</p>
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="bi bi-chat-dots me-2"></i> Send and receive messages
+                        </li>
+                        <li>
+                          <i class="bi bi-pencil-square me-2"></i> Post and manage your
+                          ads
+                        </li>
+                        <li><i class="bi bi-star me-2"></i> Rate other users</li>
+                        <li>
+                          <i class="bi bi-heart me-2"></i> Favourite ads to check them
+                          out later
+                        </li>
+                        <li>
+                          <i class="bi bi-bell me-2"></i> Set alerts for your searches
+                          and never miss a new ad in your area
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="register"
+                  role="tabpanel"
+                  aria-labelledby="register-tab"
+                >
+                <h5 class="card-title text-center">Welcome to Fennec.</h5>
+                <p class="card-text text-center">Sign in or Register to:</p>
+                <ul class="list-unstyled custom-list">
+                    <li><i class="fas fa-envelope me-2"></i> Send and receive messages</li>
+                    <li><i class="fas fa-ad me-2"></i> Post and manage your ads</li>
+                    <li><i class="fas fa-star me-2"></i> Rate other users</li>
+                    <li><i class="fas fa-heart me-2"></i> Favourite ads to check them out later</li>
+                    <li><i class="fas fa-bell me-2"></i> Set alerts for your searches and never miss a new ad in your area</li>
+                </ul>
+                
+                <div class="mb-3 text-center">
+                    <button class="btn btn-outline-dark w-100">
+                      <img
+                        src="https://www.google.com/favicon.ico"
+                        alt="Google icon"
+                        class="me-2"
+                        style="width: 20px; height: 20px"
+                      />
+                      Sign in with Google
+                    </button>
+                  </div>
+                  <div class="mb-3 text-center">
+                    <button class="btn btn-primary w-100">
+                      <i class="bi bi-facebook me-2"></i>
+                      Sign in with Facebook
+                    </button>
+                  </div>
+                  <div class="text-center mb-3">
+                    <hr class="divider" />
+                    <span class="text-muted">OR</span>
+                    <hr class="divider" />
+                  </div>
+                
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <input type="password" class="form-control" placeholder="Choose a strong password" required>
+                            <button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">Show</button>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="marketingEmails">
+                        <label class="form-check-label" for="marketingEmails">
+                            We will send you emails regarding our services, offers, competitions, and carefully selected partners. You can unsubscribe at any time.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 mb-3">Register</button>
+                    <p class="small text-muted">
+                        By selecting Register you agree you've read and accepted our Terms of Use. Please see our Privacy Notice for information regarding the processing of your data.
+                    </p>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <h5 class="text-white font-weight-bold">About Us</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-light hover:text-white">About Fennec</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white"
+                    >Advertise With Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white">Careers</a>
+                </li>
+                <li><a href="#" class="text-light hover:text-white">Media</a></li>
+                <li><a href="#" class="text-light hover:text-white">Press</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5 class="text-white font-weight-bold">Help & Contact</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light hover:text-white">FAQs</a></li>
+                <li>
+                  <a href="#" class="text-light hover:text-white">Safety</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white">Policies</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5 class="text-white font-weight-bold">More From Us</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-light hover:text-white">Car Guides</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white">Fennec Life</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white">Car Reviews</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white">Sell My Car</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light hover:text-white"
+                    >Upcycle Revolution</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5 class="text-white font-weight-bold">Mobile Apps</h5>
+              <div>
+                <a href="#" class="d-block mb-2">
+                  <img
+                    src="/placeholder.svg?height=40&width=120"
+                    alt="Download on the App Store"
+                    class="img-fluid"
+                    style="height: 40px"
+                  />
+                </a>
+                <a href="#" class="d-block mb-2">
+                  <img
+                    src="/placeholder.svg?height=40&width=120"
+                    alt="Get it on Google Play"
+                    class="img-fluid"
+                    style="height: 40px"
+                  />
+                </a>
+              </div>
+              <a href="#" class="d-block mt-2 text-light hover:text-white"
+                >More About Our Apps</a
+              >
+            </div>
+          </div>
+          <div class="mt-4 border-top border-light pt-4">
+            <div class="d-flex justify-content-between flex-wrap">
+              <div style="width: 350px">
+                <h5 class="text-white font-weight-bold">Join Fennec Community</h5>
+                <div class="d-flex space-x-3 icon-sty">
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-pinterest"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="motors-fen">
+                <h5 class="text-white font-weight-bold">Fennec Partners</h5>
+                <button class="btn btn-secondary">Motors</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p>© Copyright 2000-2024 Fennec.com Limited. All rights reserved.</p>
+            <p class="mt-2">
+              Fennec.com Limited (FRN 560524) is an Appointed Representative of
+              Consumer Credit Compliance Limited who are authorised and regulated
+              by the Financial Conduct Authority (FRN 631736).
+            </p>
+            <p class="mt-2">
+              The permissions of Consumer Credit Compliance Limited as a Principal
+              firm allow Fennec.com Limited to undertake credit broking.
+              Fennec.com Limited acts as a credit broker, not a lender. We will
+              refer you to CarMoney Limited (FRN 674094) for credit. We receive a
+              fixed fee commission up to an agreed number of leads, and additional
+              commission for those above the agreed level. You will not pay more
+              as a result of our commission arrangements.
+            </p>
+            <p class="mt-2">
+              Fennec.com Limited, registered in England and Wales with number
+              03934849, 27 Old Gloucester Street, London, WC1N 3AX, United
+              Kingdom. VAT No. 345 7692 64.
+            </p>
+            <p class="mt-4">
+              <a href="http://127.0.0.1:5500/TermsofUse.html" class="text-light hover:text-white">Terms of Use</a> |
+              <a href="#" class="text-light hover:text-white">Privacy Notice</a> |
+              <a href="#" class="text-light hover:text-white">Privacy Settings</a>
+              | <a href="http://127.0.0.1:5500/CookiesPolicy.html" class="text-light hover:text-white">Cookies Policy</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Cars for Sale - Fennec</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/asset/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="http://127.0.0.1:5500/index.html" style="text-decoration: none;">
+            <img
+              src="asset/Capture-removebg-preview.png"
+              alt="Fennec Logo"
+              style="max-width: 100%; margin-right: 10px;"
+            />
+            <span style="font-size: 1.7rem; font-weight: bold; color: inherit;">Fennec</span>
+          </a>
+        <button
+          id="menuToggle"
+          class="navbar-toggler"
+          type="button"
+          style="display: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex mx-lg-auto my-lg-0 flex-column flex-lg-row w-100 justify-content-center custom-form ">
+            <div class="input-group w-50 me-lg-1 mb-2 mb-lg-0 custom-form ">
+              <span class=" input-group-text bg-white border-0 rounded-0">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input
+                class="form-control p-2 rounded-0 search-input"
+                type="search"
+                placeholder="Search Fennec"
+                aria-label="Search"
+              />
+            </div>
+            <div class="input-group w-25 mb-2 mb-lg-0 custom-form-location ">
+                <span class="input-group-text rounded-0 bg-light border-0">
+                  <i class="fa-solid fa-location-dot me-2"></i>
+                </span>
+                <select class="form-select rounded-0 location-select custom-select">
+                  <option selected>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Germany</option>
+                </select>
+              </div>
+            <button class="btn btn-success rounded-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass fa-magnifying-glass2"></i>
+            </button>
+          </form> 
+          
+          <div class="d-flex custom-loginRegister">
+            <a href="http://127.0.0.1:5500/LoginRegister.html" class="btn custom-btn me-2 mb-lg-0 d-flex flex-column align-items-center">
+              <i class="fa-solid fa-dollar-sign mb-1"></i>
+              <span class="new-btn">Sell</span>
+            </a>
+            <a href="http://127.0.0.1:5500/LoginRegister.html" class="btn custom-btn d-flex flex-column align-items-center">
+              <i class="fa-solid fa-user mb-1 "></i>
+              <span class="new-btn">Login/Register</span>
+            </a>
+          </div>
+      </div>
+    </nav>
+    <!-- mobile ka  h -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Post an Ad</a>
+      <a href="#">Manage my Ads</a>
+      <a href="#">Messages</a>
+      <a href="#">Favourites</a>
+      <a href="#">My Alerts</a>
+      <a href="#">My Details</a>
+      <a href="#">Manage my Job Ads</a>
+      <a href="#">Help & Contact</a>
+      <a href="#">Login</a>
+    </div>
+    
+  <div class="nav-sub-menu-ct">
+    <div class="nav-menu-32323">
+      <div class="nav-menu-3344343">
+    <div class="nav-sub-menu-inn1">
+    <div class="nav-men-sub-ct-inn">
+      <ul>
+    <li class="car-vhcl-menu"><a href="http://127.0.0.1:5500/CarsVehicles.html">Cars & Vehicles</a></li>
+    <li class="for-sale-menu"><a href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+    <li class="property21"><a href="http://127.0.0.1:5500/property.html">Property</a></li>
+    <li class="jobs21"><a href="http://127.0.0.1:5500/job.html">Jobs  </a></li>
+    <li class="Services21"><a href="http://127.0.0.1:5500/Services.html">Services  </a></li>
+    <li class="Community21"><a href="http://127.0.0.1:5500/Community.html">Community</a></li>
+    <li class="Pets21"><a href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+  </ul>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  <!-- ................................................... nav bar sub menu 1........................................................................... -->
+    <div class="nav-snmn">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="http://127.0.0.1:5500/forsale.html">Cars</a></li>
+          <li>
+            <a class="" href="#">Motorbikes & Scooters</a>
+          </li>
+          <li><a class="" href="#">Vans</a></li>
+          <li>
+            <a class="" href="#">Campervans & Motorhomes</a>
+          </li>
+          <li><a class="" href="#">Caravans</a></li>
+          <li><a class="" href="#">Trucks</a></li>
+          </ul>
+          <ul>
+          <li><a class="" href="#">Plant & Tractors</a></li>
+          <li><a class="" href="#">Other Vehicles</a></li>
+          <li><a class="" href="#">Accessories</a></li>
+          <li><a class="" href="#">Parts</a></li>
+          <li><a class="" href="#">Wanted</a></li>
+        <ul>
+      </div>
+      </div>
+      <div class="div-main-sec2-sub">
+        <div class="div-main-sec2-sub-inner">
+        <div class="div-main-sec2-sub-inner5413541">
+        <h2>Discover more in our guides</h2>
+        <div class="div-main-sec2-submenu-2">
+      <ul>
+        <li><a href="#">Car Guides</a></li>
+        <li><a href="#">
+          Car Reviews</a></li>
+        <li><a href="#">Best Cars</a></li>
+        <li><a href="#">Car Advice  </a></li>
+        </ul>
+  </div>
+  </div>
+      <div class="div-img-right-submenu">
+        <img src="https://www.gumtree.com/assets/frontend/cars-guide.84c7d8c8754c04a88117e49a84535413.png" alt="">
+      </div>
+   
+  </div>
+  </div>
+  </div>
+    </div>
+  
+  <!-- ................................................... nav bar sub menu 2........................................................................... -->
+  <div class="nav-snmn2">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Appliances</a></li>
+        <li>
+          <a class="" href="#">Audio & Stereo </a>
+        </li>
+        <li><a class="" href="#">Baby & Kids Stuff</a></li>
+        <li>
+          <a class="" href="#">
+            Cameras, Camcorders & Studio Equipment</a>
+        </li>
+        <li><a class="" href="#">Christmas Decorations</a></li>
+        <li><a class="" href="#">Clothes, Footwear & Accessories</a></li>
+  
+        </ul>
+      <ul>
+        <li><a class="" href="#">Computers & Software</a></li>
+        <li>
+          <a class="" href="#">DIY Tools & Materials </a>
+        </li>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li>
+          <a class="" href="#">
+            Home & Garden</a>
+        </li>
+        <li><a class="" href="#">House Clearance</a></li>
+        <li><a class="" href="#">Music, Films, Books & Games</a></li>
+  
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+          Musical Instruments & DJ Equipment</a></li>
+        <li>
+          <a class="" href="#">Office Furniture & Equipment </a>
+        </li>
+        <li><a class="" href="#">
+          Phones, Mobile Phones & Telecoms</a></li>
+        <li>
+          <a class="" href="#">
+            Sports, Leisure & Travel</a>
+        </li>
+        <li><a class="" href="#">Tickets</a></li>
+        <li><a class="" href="#">
+          TV, DVD, Blu-Ray & Videos</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Video Games & Consoles</a></li>
+        <li>
+          <a class="" href="#">Freebies </a>
+        </li>
+        <li><a class="" href="#">Other Goods</a></li>
+        <li>
+          <a class="" href="#">
+            Stuff Wanted</a>
+        </li>
+        <li><a class="" href="#"> Swap Shop</a></li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+  </div>
+  
+  
+  
+  <!-- ................................................... nav bar sub menu 3........................................................................... -->
+  <div class="nav-snmn3">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+        <li>
+          <a class="" href="#">To Rent</a>
+        </li>
+        <li><a class="" href="#">To Share</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">To Swap</a></li>
+        <li>
+          <a class="" href="#">Commercial</a>
+        </li>
+        <li><a class="" href="#">Parking & Garage</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+          International</a></li>
+        <li>
+          <a class="" href="#">Holiday Rentals </a>
+        </li>
+        <li><a class="" href="#">Property Wanted</a></li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 4........................................................................... -->
+  <div class="nav-snmn4">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Accountancy</a></li>
+        <li>
+          <a class="" href="#">Admin, Secretarial & PA</a>
+        </li>
+        <li><a class="" href="#">Agriculture & Farming</a></li>
+        <li><a class="" href="#">Childcare</a></li>
+        <li><a class="" href="#">Computing & IT</a></li>
+       
+  
+        </ul>
+      <ul>
+        <li><a class="" href="#">Animals</a></li>
+        <li>
+          <a class="" href="#">Arts & Heritage</a>
+        </li>
+        <li><a class="" href="#">Charity</a></li>
+        <li><a class="" href="#">Construction & Property</a></li>
+        <li><a class="" href="#">Customer Service & Call Centre</a></li>
+      </ul>
+      <ul>
+        <li><a class="" href="#">
+          Financial Services</a></li>
+        <li>
+          <a class="" href="#">Gardening </a>
+        </li>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li><a class="" href="#">
+          Driving & Automotive</a></li>
+        <li><a class="" href="#">Engineering</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+          Legal</a></li>
+        <li>
+          <a class="" href="#">Leisure & Tourism </a>
+        </li>
+        <li><a class="" href="#">Manufacturing & Industrial</a></li>
+        <li><a class="" href="#">
+          Marketing, Advertising & PR</a></li>
+        <li><a class="" href="#">
+          Media, Digital & Creative</a></li>
+        </ul>
+    </div>
+    </div> 
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 5........................................................................... -->
+  <div class="nav-snmn5">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Accountancy</a></li>
+        <li>
+          <a class="" href="#">Admin, Secretarial & PA</a>
+        </li>
+        <li><a class="" href="#">Agriculture & Farming</a></li>
+        <li><a class="" href="#">Childcare</a></li>
+        <li><a class="" href="#">Computing & IT</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Animals</a></li>
+        <li>
+          <a class="" href="#">Arts & Heritage</a>
+        </li>
+        <li><a class="" href="#">Charity</a></li>
+        <li><a class="" href="#">Construction & Property</a></li>
+        <li><a class="" href="#">Customer Service & Call Centre</a></li>
+      </ul>
+      <ul>
+        <li><a class="" href="#">
+          Financial Services</a></li>
+        <li>
+          <a class="" href="#">Gardening </a>
+        </li>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li><a class="" href="#">
+          Driving & Automotive</a></li>
+        <li><a class="" href="#">Engineering</a></li>
+  </ul>
+      <ul>
+        <li><a class="" href="#">
+          Legal</a></li>
+        <li>
+          <a class="" href="#">Leisure & Tourism </a>
+        </li>
+        <li><a class="" href="#">Manufacturing & Industrial</a></li>
+        <li><a class="" href="#">
+          Marketing, Advertising & PR</a></li>
+        <li><a class="" href="#">
+          Media, Digital & Creative</a></li>
+        </ul>
+  </div>
+    </div> 
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 6........................................................................... -->
+  <div class="nav-snmn6">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Business & Office</a></li>
+        <li>
+          <a class="" href="#">Childcare</a>
+        </li>
+        <li><a class="" href="#">Clothing</a></li>
+        <li><a class="" href="#">Computers & Telecoms</a></li>
+      </ul>
+      <ul>
+        <li><a class="" href="#">Entertainment</a></li>
+        <li>
+          <a class="" href="#">Finance & Legal</a>
+        </li>
+        <li><a class="" href="#">
+          Food & Drink</a></li>
+        <li><a class="" href="#">Goods Suppliers & Retailers</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Health & Beauty</a></li>
+        <li>
+          <a class="" href="#">Motoring</a>
+        </li>
+        <li><a class="" href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+        <li><a class="" href="#">Driving & Automotive</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Property & Maintenance</a></li>
+        <li>
+          <a class="" href="#"> Tradesmen & Construction </a>
+        </li>
+        <li><a class="" href="#">Transport</a></li>
+        <li><a class="" href="#">Travel & Tourism</a></li> 
+  
+        </ul>
+    </div>
+    </div>
+  </div>
+  </div>
+  <!-- ................................................... nav bar sub menu 7........................................................................... -->
+  <div class="nav-snmn7">
+    <div class="nav-main-dwdisnmn">
+    <div class="nav-snm-innnn2">
+      <h2>Browse by</h2>
+      <div class="div-nv-sb-menu">
+      <ul>
+        <li><a class="" href="#">Business & Office</a></li>
+        <li>
+          <a class="" href="#">Childcare</a>
+        </li>
+        <li><a class="" href="#">Clothing</a></li>
+        <li><a class="" href="#">Computers & Telecoms</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Entertainment</a></li>
+        <li>
+          <a class="" href="#">Finance & Legal</a>
+        </li>
+        <li><a class="" href="#">
+          Food & Drink</a></li>
+        <li><a class="" href="#">Goods Suppliers & Retailers</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">
+       
+  Health & Beauty</a></li>
+        <li>
+          <a class="" href="#">Motoring</a>
+        </li>
+        <li><a class="" href="#">Pets</a></li>
+        <li><a class="" href="#">Driving & Automotive</a></li>
+        </ul>
+      <ul>
+        <li><a class="" href="#">Property & Maintenance</a></li>
+        <li>
+          <a class="" href="#"> Tradesmen & Construction </a>
+        </li>
+        <li><a class="" href="#">Transport</a></li>
+        <li><a class="" href="#">Travel & Tourism</a></li> 
+        </ul>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <!-- ----------------------------------------responsive menu ------------------------------ -->
+   <div class="respopnsive-menu321">
+  <div class="nav-menu-res-3344343">
+    <div class="nav-sub-menu-res-inn1">
+    <div class="nav-men-sub-res-ct-inn">
+      <ul>
+    <li class="car-vhcl-menu-res"><a href="http://127.0.0.1:5500/CarsVehicles.html">Cars & Vehicles</a></li>
+    <li class="for-sale-menu-res"><a href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+    <li class="property21-res"><a href="http://127.0.0.1:5500/property.html">Property</a></li>
+    <li class="jobs21-res"><a href="http://127.0.0.1:5500/job.html">Jobs  </a></li>
+    <li class="Services21-res"><a href="http://127.0.0.1:5500/Services.html">Services  </a></li>
+    <li class="Community21-res"><a href="http://127.0.0.1:5500/Community.html">Community</a></li>
+    <li class="Pets21-res"><a href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+  </ul>
+    </div>
+  </div>
+  </div>
+  
+  <div class="remenu-sub">
+    <div class="remenu-main-dw">
+      <div class="remenu-innnn">
+        <div class="div-sub-321">
+          <img class="crs-end" src="./asset/delete-button.png" alt="">
+         <h3> Cars & Vehicles</h3>
+        </div>
+        <h2>Browse by</h2>
+        <ul>
+          <li><a href="#">Business & Office</a></li>
+          <li><a href="#">Childcare</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Computers & Telecoms</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Finance & Legal</a></li>
+          <li><a href="#">Food & Drink</a></li>
+          <li><a href="#">Goods Suppliers & Retailers</a></li>
+          <li><a href="#">Health & Beauty</a></li>
+          <li><a href="#">Motoring</a></li>
+          </ul>
+         
+        <ul>
+          <li><a href="#">Business & Office</a></li>
+          <li><a href="#">Childcare</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Computers & Telecoms</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Finance & Legal</a></li>
+          <li><a href="#">Food & Drink</a></li>
+          <li><a href="#">Goods Suppliers & Retailers</a></li>
+          <li><a href="#">Health & Beauty</a></li>
+          <li><a href="#">Motoring</a></li>
+          </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+    <header class="hero-section">
+      <div class="container hero-content">
+        <h1 class="text-center text-white mb-2"><b>Find Cars for Sale </b></h1>
+        <p class="text-center text-white mb-4">
+          Search thousands of ads on the UK's local motors marketplace*
+        </p>
+        <div class="search-form">
+          <div class="row g-3">
+            <div class="col-md-3 col-sm-6">
+              <label for="make" class="form-label">Make</label>
+              <select id="make" class="form-select">
+                <option selected>Select make</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <label for="model" class="form-label">Model</label>
+              <select id="model" class="form-select">
+                <option selected>Select model</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <label for="min-price" class="form-label">Price range</label>
+              <div class="d-flex">
+                <select id="min-price" class="form-select me-2">
+                  <option selected>No min</option>
+                </select>
+                <select id="max-price" class="form-select">
+                  <option selected>No max</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <label for="location" class="form-label">Location</label>
+              <div class="location-input">
+                <span class="location-icon">📍</span>
+                <input
+                  type="text"
+                  class="form-control ps-4"
+                  id="location"
+                  placeholder="United Kingdom"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-9 col-sm-6 d-flex align-items-center">
+              <a href="#" class="more-options">More options ▼</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-2 mt-sm-0">
+              <button type="submit" class="btn btn-search text-white w-100">
+                Search Cars (224,232)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="sell-section">
+      <div class="container">
+        <h2 class="text-center mb-4">
+        </h2>
+        <div class="d-flex justify-content-center align-items-center mb-3">
+          <span class="me-3"> Sell your car online for FREE </span>
+          <span>Selling a car is free for private sellers</span>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-enter-reg me-3">
+            <span class="eu-flag"></span>
+            ENTER REG
+          </button>
+          <button class="btn btn-sell-car">Sell my car</button>
+        </div>
+        <div class="newone text-center mt-3">
+          <a href="#">Learn more about how to sell your car</a>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-grey">
+      <div class="container">
+        <h2 class="text-center mb-4"><b>Popular models</b></h2>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+        >
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car1.jpg"
+                class="card-img-top car-image"
+                alt="Vauxhall Corsa"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Vauxhall Corsa</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car2.jpg"
+                class="card-img-top car-image"
+                alt="Volkswagen Polo"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Volkswagen Polo</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car8.jpg"
+                class="card-img-top car-image"
+                alt="Ford Fiesta"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Audi A3</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car5.jpg"
+                class="card-img-top car-image"
+                alt="Honda Civic"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Toyota Supra</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car5.jpg"
+                class="card-img-top car-image"
+                alt="Toyota Supra"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Toyota Supra</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car6.jpg"
+                class="card-img-top car-image"
+                alt="Land Rover Defender"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Land Rover Defender</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car2.jpg"
+                class="card-img-top car-image"
+                alt="Toyota Hilux"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Volkswagen Polo</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 car-card">
+              <img
+                src="/asset/car8.jpg"
+                class="card-img-top car-image"
+                alt="Audi A3"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Audi A3</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <button class="btn btn-button px-4 py-2">See all makes</button>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5"><b>Browse by Body Type </b></h2>
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+              <div
+                class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center body-type-icon mb-2"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>Hatchback</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+              <div
+                class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center body-type-icon mb-2"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>Saloon</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+              <div
+                class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center body-type-icon mb-2"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>Estate</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+              <div
+                class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center body-type-icon mb-2"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>MPV</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+              <div
+                class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center body-type-icon mb-2"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>Coupe</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+              <div
+                class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center body-type-icon mb-2"
+              >
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <span>Convertible</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="text-center mb-4">
+        <b>Read our latest expert car reviews and articles</b>
+      </h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/asset/read1.jpg" class="card-img-top" alt="Car Review" />
+            <div class="card-body">
+              <p class="text-muted mb-1">Car reviews</p>
+              <h5 class="card-title">Browse car reviews</h5>
+              <p class="card-text">
+                With our expert team's ratings and commentary, you'll think
+                you've just been on a test drive.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-outline-primary w-100">
+                Read full review
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/asset/read2.jpg" class="card-img-top" alt="Best Of" />
+            <div class="card-body">
+              <p class="text-muted mb-1">Best of</p>
+              <h5 class="card-title">Read our best-of lists</h5>
+              <p class="card-text">
+                Whether you're after comfort, style or value, take the stress
+                out of researching with our hand-picked cars.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-outline-primary w-100">
+                Read full review
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/asset/read3.jpg"
+              class="card-img-top"
+              alt="Safety Tips"
+            />
+            <div class="card-body">
+              <p class="text-muted mb-1">Car guides & advice</p>
+              <h5 class="card-title">Safety tips & advice</h5>
+              <p class="card-text">
+                Learn how to stay safe when buying and selling your vehicle.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-outline-primary w-100">
+                Read full review
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/asset/read4.jpg" class="card-img-top" alt="Cars Hub" />
+            <div class="card-body">
+              <p class="text-muted mb-1">Car guides & advice</p>
+              <h5 class="card-title">Visit our cars hub</h5>
+              <p class="card-text">
+                Find everything you need to decide on your ideal used car
+                inside.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-outline-primary w-100">
+                Read full review
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-end mb-3">
+        <a href="#" class="linkcolor"
+          >Read more from our Motors Hub <i class="fas fa-chevron-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <section class="brand-section">
+      <div class="container">
+        <h2 class="text-center mb-5"><b>Browse by Brands </b></h2>
+        <div class="row" id="brandContainer"></div>
+      </div>
+    </section>
+
+    <section class="pt-5 py-3 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4"><b>Recently listed </b></h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="/asset/list3.avif"
+                class="card-img-top"
+                alt="BMW 116D"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  BMW 116D BUSINESS EDITION SAT NAV (2018)
+                </h5>
+                <p class="card-text">
+                  <small
+                    >2018 | 136,000 miles | Private | Diesel | 1,496 cc</small
+                  ><br />
+                  <small>Heckmondwike, West Yorkshire</small>
+                </p>
+                <p class="text-success fw-bold">£7,350</p>
+                <small class="text-muted">Just now</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="/asset/list3.avif"
+                class="card-img-top"
+                alt="BMW 5 Series"
+              />
+              <div class="card-body" `>
+                <h5 class="card-title">
+                  BMW 5 SERIES, Saloon, 2012, Semi-Auto, 1995 (cc)
+                </h5>
+                <p class="card-text">
+                  <small
+                    >2012 | 120,292 miles | Private | Diesel | 1,995 cc</small
+                  ><br />
+                  <small>Sherwood, Nottinghamshire</small>
+                </p>
+                <p class="text-success fw-bold">£4,250</p>
+                <small class="text-muted">Just now</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="/asset/list3.avif"
+                class="card-img-top"
+                alt="Ford Kuga"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ford KUGA, Estate, 2010, Manual, 1997 (cc), 5 doors
+                </h5>
+                <p class="card-text">
+                  <small
+                    >2010 | 128,410 miles | Private | Diesel | 1,997 cc</small
+                  ><br />
+                  <small>Winchester, Hampshire</small>
+                </p>
+                <p class="text-success fw-bold">£3,250</p>
+                <small class="text-muted">Just now</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="/asset/list4.avif"
+                class="card-img-top"
+                alt="BMW 116D"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  BMW 116D BUSINESS EDITION SAT NAV (2018)
+                </h5>
+                <p class="card-text">
+                  <small
+                    >2018 | 136,000 miles | Private | Diesel | 1,496 cc</small
+                  ><br />
+                  <small>Heckmondwike, West Yorkshire</small>
+                </p>
+                <p class="text-success fw-bold">£7,350</p>
+                <small class="text-muted">Just now</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="/asset/list4.avif"
+                class="card-img-top"
+                alt="BMW 5 Series"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  BMW 5 SERIES, Saloon, 2012, Semi-Auto, 1995 (cc)
+                </h5>
+                <p class="card-text">
+                  <small
+                    >2012 | 120,292 miles | Private | Diesel | 1,995 cc</small
+                  ><br />
+                  <small>Sherwood, Nottinghamshire</small>
+                </p>
+                <p class="text-success fw-bold">£4,250</p>
+                <small class="text-muted">Just now</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="/asset/list4.avif"
+                class="card-img-top"
+                alt="Ford Kuga"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ford KUGA, Estate, 2010, Manual, 1997 (cc), 5 doors
+                </h5>
+                <p class="card-text">
+                  <small
+                    >2010 | 128,410 miles | Private | Diesel | 1,997 cc</small
+                  ><br />
+                  <small>Winchester, Hampshire</small>
+                </p>
+                <p class="text-success fw-bold">£3,250</p>
+                <small class="text-muted">Just now</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row top-section">
+          <div class="col-md-12 pt-4">
+            <span class="tp-lctn-mn d-flex justify-content-between">
+              <h5 class="text-center mb-5 tp-lct-icn"><b>Top Searches</b></h5>
+              <h5><b>Top Locations</b></h5>
+            </span>
+              <div class="search-links text-center pb-5 d-flex justify-content-evenly">
+                  <a href="#" class="search-link">cars birmingham</a>
+                  <a href="#" class="search-link">bournemouth cars</a>
+                  <a href="#" class="search-link">cars convertables</a>
+                  <a href="#" class="search-link">cars renfrewshire</a>
+                  <a href="#" class="search-link">bedworth cars</a>
+                  <a href="#" class="search-link">cars banbridge</a>
+                  <a href="#" class="search-link">cars dorchester</a>
+                  <a href="#" class="search-link">convertables cars</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <footer class="text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">About Us</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light hover:text-white">About Fennec</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white"
+                  >Advertise With Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Careers</a>
+              </li>
+              <li><a href="#" class="text-light hover:text-white">Media</a></li>
+              <li><a href="#" class="text-light hover:text-white">Press</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">Help & Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light hover:text-white">FAQs</a></li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Safety</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Policies</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">More From Us</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light hover:text-white">Car Guides</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Fennec Life</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Car Reviews</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Sell My Car</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white"
+                  >Upcycle Revolution</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">Mobile Apps</h4>
+            <div>
+              <a href="#" class="d-block mb-2 ggle-tag-img">
+                <img
+                  src="/asset/app-store-logo.jpg"
+                  alt="Download on the App Store"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </a>
+              <a href="#" class="d-block mb-2 ggle-tag-img">
+                <img
+                  src="/asset/google-play-logo.png"
+                  alt="Get it on Google Play"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </a>
+            </div>
+            <a href="#" class="d-block mt-2 text-light hover:text-white"
+              >More About Our Apps</a
+            >
+          </div>
+        </div>
+
+        <div class="mt-4 border-top border-light pt-4">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div style="width: 350px">
+              <h4 class="text-white font-weight-bold">Join Fennec Community</h4>
+              <div class="d-flex space-x-3 icon-sty">
+                <a href="#" class="text-light hover:text-white"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-light hover:text-white"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-light hover:text-white"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+                <a href="#" class="text-light hover:text-white"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-light hover:text-white"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="text-light hover:text-white"
+                  ><i class="fab fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+            <div class="motors-fen">
+              <h4 class="text-white font-weight-bold">Fennec Partners</h4>
+              <button class="btn btn-secondary">Motors</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 text-center">
+          <p>© Copyright 2000-2024 Fennec.com Limited. All rights reserved.</p>
+          <p class="mt-2">
+            Fennec.com Limited (FRN 560524) is an Appointed Representative of
+            Consumer Credit Compliance Limited who are authorised and regulated
+            by the Financial Conduct Authority (FRN 631736).
+          </p>
+          <p class="mt-2">
+            The permissions of Consumer Credit Compliance Limited as a Principal
+            firm allow Fennec.com Limited to undertake credit broking.
+            Fennec.com Limited acts as a credit broker, not a lender. We will
+            refer you to CarMoney Limited (FRN 674094) for credit. We receive a
+            fixed fee commission up to an agreed number of leads, and additional
+            commission for those above the agreed level. You will not pay more
+            as a result of our commission arrangements.
+          </p>
+          <p class="mt-2">
+            Fennec.com Limited, registered in England and Wales with number
+            03934849, 27 Old Gloucester Street, London, WC1N 3AX, United
+            Kingdom. VAT No. 345 7692 64.
+          </p>
+          <p class="mt-4">
+            <a href="http://127.0.0.1:5500/TermsofUse.html" class="text-light hover:text-white">Terms of Use</a> |
+            <a href="#" class="text-light hover:text-white">Privacy Notice</a> |
+            <a href="#" class="text-light hover:text-white">Privacy Settings</a>
+            | <a href="http://127.0.0.1:5500/CookiesPolicy.html" class="text-light hover:text-white">Cookies Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+
+</html>

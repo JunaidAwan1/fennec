@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Sale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/styles.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="http://127.0.0.1:5500/index.html" style="text-decoration: none;">
+              <img
+                src="asset/Capture-removebg-preview.png"
+                alt="Fennec Logo"
+                style="max-width: 100%; margin-right: 10px;"
+              />
+              <span style="font-size: 1.7rem; font-weight: bold; color: inherit;">Fennec</span>
+            </a>
+          <button
+            id="menuToggle"
+            class="navbar-toggler"
+            type="button"
+            style="display: none"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="d-flex mx-lg-auto my-lg-0 flex-column flex-lg-row w-100 justify-content-center custom-form ">
+              <div class="input-group w-50 me-lg-1 mb-2 mb-lg-0 custom-form ">
+                <span class=" input-group-text bg-white border-0 rounded-0">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input
+                  class="form-control p-2 rounded-0 search-input"
+                  type="search"
+                  placeholder="Search Fennec"
+                  aria-label="Search"
+                />
+              </div>
+              <div class="input-group w-25 mb-2 mb-lg-0 custom-form-location ">
+                  <span class="input-group-text rounded-0 bg-light border-0">
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                  </span>
+                  <select class="form-select rounded-0 location-select custom-select">
+                    <option selected>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>Germany</option>
+                  </select>
+                </div>
+              <button class="btn btn-success rounded-0" type="submit">
+                <i class="fa-solid fa-magnifying-glass fa-magnifying-glass2"></i>
+              </button>
+            </form> 
+            
+            <div class="d-flex custom-loginRegister">
+              <a href="http://127.0.0.1:5500/LoginRegister.html" class="btn custom-btn me-2 mb-lg-0 d-flex flex-column align-items-center">
+                <i class="fa-solid fa-dollar-sign mb-1"></i>
+                <span class="new-btn">Sell</span>
+              </a>
+              <a href="http://127.0.0.1:5500/LoginRegister.html" class="btn custom-btn d-flex flex-column align-items-center">
+                <i class="fa-solid fa-user mb-1 "></i>
+                <span class="new-btn">Login/Register</span>
+              </a>
+            </div>
+        </div>
+      </nav>
+      <!-- mobile ka  h -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Home</a>
+        <a href="#">Post an Ad</a>
+        <a href="#">Manage my Ads</a>
+        <a href="#">Messages</a>
+        <a href="#">Favourites</a>
+        <a href="#">My Alerts</a>
+        <a href="#">My Details</a>
+        <a href="#">Manage my Job Ads</a>
+        <a href="#">Help & Contact</a>
+        <a href="#">Login</a>
+      </div>
+      
+    <div class="nav-sub-menu-ct">
+      <div class="nav-menu-32323">
+        <div class="nav-menu-3344343">
+      <div class="nav-sub-menu-inn1">
+      <div class="nav-men-sub-ct-inn">
+        <ul>
+      <li class="car-vhcl-menu"><a href="http://127.0.0.1:5500/CarsVehicles.html">Cars & Vehicles</a></li>
+      <li class="for-sale-menu"><a href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+      <li class="property21"><a href="http://127.0.0.1:5500/property.html">Property</a></li>
+      <li class="jobs21"><a href="http://127.0.0.1:5500/job.html">Jobs  </a></li>
+      <li class="Services21"><a href="http://127.0.0.1:5500/Services.html">Services  </a></li>
+      <li class="Community21"><a href="http://127.0.0.1:5500/Community.html">Community</a></li>
+      <li class="Pets21"><a href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+    </ul>
+      </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    <!-- ................................................... nav bar sub menu 1........................................................................... -->
+      <div class="nav-snmn">
+        <div class="nav-main-dwdisnmn">
+        <div class="nav-snm-innnn">
+          <h2>Browse by</h2>
+          <div class="div-nv-sb-menu">
+          <ul>
+            <li><a class="" href="http://127.0.0.1:5500/forsale.html">Cars</a></li>
+            <li>
+              <a class="" href="#">Motorbikes & Scooters</a>
+            </li>
+            <li><a class="" href="#">Vans</a></li>
+            <li>
+              <a class="" href="#">Campervans & Motorhomes</a>
+            </li>
+            <li><a class="" href="#">Caravans</a></li>
+            <li><a class="" href="#">Trucks</a></li>
+            </ul>
+            <ul>
+            <li><a class="" href="#">Plant & Tractors</a></li>
+            <li><a class="" href="#">Other Vehicles</a></li>
+            <li><a class="" href="#">Accessories</a></li>
+            <li><a class="" href="#">Parts</a></li>
+            <li><a class="" href="#">Wanted</a></li>
+          <ul>
+        </div>
+        </div>
+        <div class="div-main-sec2-sub">
+          <div class="div-main-sec2-sub-inner">
+          <div class="div-main-sec2-sub-inner5413541">
+          <h2>Discover more in our guides</h2>
+          <div class="div-main-sec2-submenu-2">
+        <ul>
+          <li><a href="#">Car Guides</a></li>
+          <li><a href="#">
+            Car Reviews</a></li>
+          <li><a href="#">Best Cars</a></li>
+          <li><a href="#">Car Advice  </a></li>
+          </ul>
+    </div>
+    </div>
+        <div class="div-img-right-submenu">
+          <img src="https://www.gumtree.com/assets/frontend/cars-guide.84c7d8c8754c04a88117e49a84535413.png" alt="">
+        </div>
+     
+    </div>
+    </div>
+    </div>
+      </div>
+    
+    <!-- ................................................... nav bar sub menu 2........................................................................... -->
+    <div class="nav-snmn2">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn2">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="#">Appliances</a></li>
+          <li>
+            <a class="" href="#">Audio & Stereo </a>
+          </li>
+          <li><a class="" href="#">Baby & Kids Stuff</a></li>
+          <li>
+            <a class="" href="#">
+              Cameras, Camcorders & Studio Equipment</a>
+          </li>
+          <li><a class="" href="#">Christmas Decorations</a></li>
+          <li><a class="" href="#">Clothes, Footwear & Accessories</a></li>
+    
+          </ul>
+        <ul>
+          <li><a class="" href="#">Computers & Software</a></li>
+          <li>
+            <a class="" href="#">DIY Tools & Materials </a>
+          </li>
+          <li><a class="" href="#">Health & Beauty</a></li>
+          <li>
+            <a class="" href="#">
+              Home & Garden</a>
+          </li>
+          <li><a class="" href="#">House Clearance</a></li>
+          <li><a class="" href="#">Music, Films, Books & Games</a></li>
+    
+          </ul>
+        <ul>
+          <li><a class="" href="#">
+            Musical Instruments & DJ Equipment</a></li>
+          <li>
+            <a class="" href="#">Office Furniture & Equipment </a>
+          </li>
+          <li><a class="" href="#">
+            Phones, Mobile Phones & Telecoms</a></li>
+          <li>
+            <a class="" href="#">
+              Sports, Leisure & Travel</a>
+          </li>
+          <li><a class="" href="#">Tickets</a></li>
+          <li><a class="" href="#">
+            TV, DVD, Blu-Ray & Videos</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">Video Games & Consoles</a></li>
+          <li>
+            <a class="" href="#">Freebies </a>
+          </li>
+          <li><a class="" href="#">Other Goods</a></li>
+          <li>
+            <a class="" href="#">
+              Stuff Wanted</a>
+          </li>
+          <li><a class="" href="#"> Swap Shop</a></li>
+          </ul>
+      </div>
+      </div>
+      
+    </div>
+    </div>
+    
+    
+    
+    <!-- ................................................... nav bar sub menu 3........................................................................... -->
+    <div class="nav-snmn3">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn2">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+          <li>
+            <a class="" href="#">To Rent</a>
+          </li>
+          <li><a class="" href="#">To Share</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">To Swap</a></li>
+          <li>
+            <a class="" href="#">Commercial</a>
+          </li>
+          <li><a class="" href="#">Parking & Garage</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">
+            International</a></li>
+          <li>
+            <a class="" href="#">Holiday Rentals </a>
+          </li>
+          <li><a class="" href="#">Property Wanted</a></li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+    </div>
+    <!-- ................................................... nav bar sub menu 4........................................................................... -->
+    <div class="nav-snmn4">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn2">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="#">Accountancy</a></li>
+          <li>
+            <a class="" href="#">Admin, Secretarial & PA</a>
+          </li>
+          <li><a class="" href="#">Agriculture & Farming</a></li>
+          <li><a class="" href="#">Childcare</a></li>
+          <li><a class="" href="#">Computing & IT</a></li>
+         
+    
+          </ul>
+        <ul>
+          <li><a class="" href="#">Animals</a></li>
+          <li>
+            <a class="" href="#">Arts & Heritage</a>
+          </li>
+          <li><a class="" href="#">Charity</a></li>
+          <li><a class="" href="#">Construction & Property</a></li>
+          <li><a class="" href="#">Customer Service & Call Centre</a></li>
+        </ul>
+        <ul>
+          <li><a class="" href="#">
+            Financial Services</a></li>
+          <li>
+            <a class="" href="#">Gardening </a>
+          </li>
+          <li><a class="" href="#">Health & Beauty</a></li>
+          <li><a class="" href="#">
+            Driving & Automotive</a></li>
+          <li><a class="" href="#">Engineering</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">
+            Legal</a></li>
+          <li>
+            <a class="" href="#">Leisure & Tourism </a>
+          </li>
+          <li><a class="" href="#">Manufacturing & Industrial</a></li>
+          <li><a class="" href="#">
+            Marketing, Advertising & PR</a></li>
+          <li><a class="" href="#">
+            Media, Digital & Creative</a></li>
+          </ul>
+      </div>
+      </div> 
+    </div>
+    </div>
+    <!-- ................................................... nav bar sub menu 5........................................................................... -->
+    <div class="nav-snmn5">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn2">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="#">Accountancy</a></li>
+          <li>
+            <a class="" href="#">Admin, Secretarial & PA</a>
+          </li>
+          <li><a class="" href="#">Agriculture & Farming</a></li>
+          <li><a class="" href="#">Childcare</a></li>
+          <li><a class="" href="#">Computing & IT</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">Animals</a></li>
+          <li>
+            <a class="" href="#">Arts & Heritage</a>
+          </li>
+          <li><a class="" href="#">Charity</a></li>
+          <li><a class="" href="#">Construction & Property</a></li>
+          <li><a class="" href="#">Customer Service & Call Centre</a></li>
+        </ul>
+        <ul>
+          <li><a class="" href="#">
+            Financial Services</a></li>
+          <li>
+            <a class="" href="#">Gardening </a>
+          </li>
+          <li><a class="" href="#">Health & Beauty</a></li>
+          <li><a class="" href="#">
+            Driving & Automotive</a></li>
+          <li><a class="" href="#">Engineering</a></li>
+    </ul>
+        <ul>
+          <li><a class="" href="#">
+            Legal</a></li>
+          <li>
+            <a class="" href="#">Leisure & Tourism </a>
+          </li>
+          <li><a class="" href="#">Manufacturing & Industrial</a></li>
+          <li><a class="" href="#">
+            Marketing, Advertising & PR</a></li>
+          <li><a class="" href="#">
+            Media, Digital & Creative</a></li>
+          </ul>
+    </div>
+      </div> 
+    </div>
+    </div>
+    <!-- ................................................... nav bar sub menu 6........................................................................... -->
+    <div class="nav-snmn6">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn2">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="#">Business & Office</a></li>
+          <li>
+            <a class="" href="#">Childcare</a>
+          </li>
+          <li><a class="" href="#">Clothing</a></li>
+          <li><a class="" href="#">Computers & Telecoms</a></li>
+        </ul>
+        <ul>
+          <li><a class="" href="#">Entertainment</a></li>
+          <li>
+            <a class="" href="#">Finance & Legal</a>
+          </li>
+          <li><a class="" href="#">
+            Food & Drink</a></li>
+          <li><a class="" href="#">Goods Suppliers & Retailers</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">Health & Beauty</a></li>
+          <li>
+            <a class="" href="#">Motoring</a>
+          </li>
+          <li><a class="" href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+          <li><a class="" href="#">Driving & Automotive</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">Property & Maintenance</a></li>
+          <li>
+            <a class="" href="#"> Tradesmen & Construction </a>
+          </li>
+          <li><a class="" href="#">Transport</a></li>
+          <li><a class="" href="#">Travel & Tourism</a></li> 
+    
+          </ul>
+      </div>
+      </div>
+    </div>
+    </div>
+    <!-- ................................................... nav bar sub menu 7........................................................................... -->
+    <div class="nav-snmn7">
+      <div class="nav-main-dwdisnmn">
+      <div class="nav-snm-innnn2">
+        <h2>Browse by</h2>
+        <div class="div-nv-sb-menu">
+        <ul>
+          <li><a class="" href="#">Business & Office</a></li>
+          <li>
+            <a class="" href="#">Childcare</a>
+          </li>
+          <li><a class="" href="#">Clothing</a></li>
+          <li><a class="" href="#">Computers & Telecoms</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">Entertainment</a></li>
+          <li>
+            <a class="" href="#">Finance & Legal</a>
+          </li>
+          <li><a class="" href="#">
+            Food & Drink</a></li>
+          <li><a class="" href="#">Goods Suppliers & Retailers</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">
+         
+    Health & Beauty</a></li>
+          <li>
+            <a class="" href="#">Motoring</a>
+          </li>
+          <li><a class="" href="#">Pets</a></li>
+          <li><a class="" href="#">Driving & Automotive</a></li>
+          </ul>
+        <ul>
+          <li><a class="" href="#">Property & Maintenance</a></li>
+          <li>
+            <a class="" href="#"> Tradesmen & Construction </a>
+          </li>
+          <li><a class="" href="#">Transport</a></li>
+          <li><a class="" href="#">Travel & Tourism</a></li> 
+          </ul>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- ----------------------------------------responsive menu ------------------------------ -->
+     <div class="respopnsive-menu321">
+    <div class="nav-menu-res-3344343">
+      <div class="nav-sub-menu-res-inn1">
+      <div class="nav-men-sub-res-ct-inn">
+        <ul>
+      <li class="car-vhcl-menu-res"><a href="http://127.0.0.1:5500/CarsVehicles.html">Cars & Vehicles</a></li>
+      <li class="for-sale-menu-res"><a href="http://127.0.0.1:5500/forsale.html">For Sale</a></li>
+      <li class="property21-res"><a href="http://127.0.0.1:5500/property.html">Property</a></li>
+      <li class="jobs21-res"><a href="http://127.0.0.1:5500/job.html">Jobs  </a></li>
+      <li class="Services21-res"><a href="http://127.0.0.1:5500/Services.html">Services  </a></li>
+      <li class="Community21-res"><a href="http://127.0.0.1:5500/Community.html">Community</a></li>
+      <li class="Pets21-res"><a href="http://127.0.0.1:5500/Pets.html">Pets</a></li>
+    </ul>
+      </div>
+    </div>
+    </div>
+    
+    <div class="remenu-sub">
+      <div class="remenu-main-dw">
+        <div class="remenu-innnn">
+          <div class="div-sub-321">
+            <img class="crs-end" src="./asset/delete-button.png" alt="">
+           <h3> Cars & Vehicles</h3>
+          </div>
+          <h2>Browse by</h2>
+          <ul>
+            <li><a href="#">Business & Office</a></li>
+            <li><a href="#">Childcare</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Computers & Telecoms</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Finance & Legal</a></li>
+            <li><a href="#">Food & Drink</a></li>
+            <li><a href="#">Goods Suppliers & Retailers</a></li>
+            <li><a href="#">Health & Beauty</a></li>
+            <li><a href="#">Motoring</a></li>
+            </ul>
+           
+          <ul>
+            <li><a href="#">Business & Office</a></li>
+            <li><a href="#">Childcare</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Computers & Telecoms</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Finance & Legal</a></li>
+            <li><a href="#">Food & Drink</a></li>
+            <li><a href="#">Goods Suppliers & Retailers</a></li>
+            <li><a href="#">Health & Beauty</a></li>
+            <li><a href="#">Motoring</a></li>
+            </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between mb-4">
+                <div>
+                    <h1 class="jobhead">1,075,855 ads Stuff for Sale</h1>
+                    <button class="btn btn-sell-car mt-2">Save search alert</button>
+                </div>
+                <div class="d-flex align-items-end">
+                    <select class="form-select" style="width: auto;">
+                        <option>Most recent first</option>
+                        <option>Price: Low to high</option>
+                        <option>Price: High to low</option>
+                        <option>Price: Nearest first</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-3 mb-5 sale-loc left-side">
+                <div class="mb-4 mt-3 p-3 sale-loc">
+                    <h5>Location</h5>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                        <input type="text" class="form-control" placeholder="United Kingdom">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option selected>Choose Distance</option>
+                            <option value="50000">1 miles</option>
+                            <option value="70000">3 miles</option>
+                            <option value="100000">5 miles</option>
+                            <option value="150000">10 miles</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-sell-car w-100">Update</button>
+                </div>
+
+                <div class="mb-2 p-3 sale-loc">
+                    <h5>Category</h5>
+                    <div class="ms-3">
+                        <div class="custom-category">
+                            <p>Home & Garden</p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Baby & Kids Stuff <span class="text-muted">(5637)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Clothes, Footwear & <br>Accessories <span class="text-muted">(4516)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Sports, Leisure & Travel <span class="text-muted">(4270)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Other Goods <span class="text-muted">(3147)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>DIY Tools & <br>Materials <span class="text-muted">(3070)</span></p>
+                        </div>
+                    </div>
+                    <div class="more-categories" id="moreCategories" style="display: none;">
+                        <div class="ms-3 mt-2">
+                            <div class="custom-category">
+                                <p>Appliances <span class="text-muted">(2911)</span></p>
+                            </div>
+                            <div class="custom-category">
+                                <p>Computers & Software <span class="text-muted">(2371)</span></p>
+                            </div>
+                            <div class="custom-category">
+                                <p>Health & Beauty<span class="text-muted">(2365)</span></p>
+                            </div>
+                            <div class="custom-category">
+                                <p>Office Furniture &<br> Equipment <span class="text-muted">(2231)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="show pt-1" id="toggleCategories">Show 4 more</a>
+                </div>
+                <div class="more-categories" id="moreCategories" style="display: none;">
+                    <div class="ms-3 mt-2">
+                        <div class="custom-category">
+                            <p>Sales <span class="text-muted">(2911)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Agriculture & Farming <span class="text-muted">(2371)</span></p>
+                        </div>
+                    </div>
+                        <div class="custom-category">
+                            <p>Jobs</p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Teaching & Education <span class="text-muted">(5637)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Transport & Logistics <span class="text-muted">(4516)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Manufacturing & Industrial <span class="text-muted">(4270)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Retail & FMCG <span class="text-muted">(3147)</span></p>
+                        </div>
+                        <div class="custom-category">
+                            <p>Engineering <span class="text-muted">(3070)</span></p>
+                        </div>
+                    </div>
+                    <div class="more-categories" id="moreCategories" style="display: none;">
+                        <div class="ms-3 mt-2">
+                            <div class="custom-category">
+                                <p>Sales <span class="text-muted">(2911)</span></p>
+                            </div>
+                            <div class="custom-category">
+                                <p>Agriculture & Farming <span class="text-muted">(2371)</span></p>
+                            </div>
+                    </div>
+                    <a href="#" class="show" id="toggleCategories">Show 30 more</a>
+                </div>
+
+                <div class=" p-3 sale-loc">
+                    <h5>Price</h5>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Min price">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Max price">
+                    </div>
+                    <button class="btn btn-sell-car w-100">Update</button>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="product-card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="product-image">
+                                <img src="https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/4b9160a8-9109-4cdc-860d-0f1ddbca6700/86" alt="Elegant Sofa" class="sale-logo">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">Room for rent</h5>
+                                    <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <p class="card-text">Private | Date available: 15 Oct 2024 | House | 3 Beds <br>Bradford, West Yorkshire</p>
+                                <p class="card-text"><small class="text-muted">Manchester</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">£330</span>
+                                    <span class="product-time">Just now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="product-image">
+                                <img src="https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/2ed38474-e28c-4c10-7e5c-c35f46f70100/86" alt="Air supreme suitcase" class="sale-logo">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">Air supreme suitcase (small)</h5>
+                                    <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <p class="card-text">Private | Date available: 15 Oct 2024 | House | 3 Beds <br>Bradford, West Yorkshire</p>
+                                <p class="card-text"><small class="text-muted">Blackburn, Lancashire</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">£15</span>
+                                    <span class="product-time">Just now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="product-image">
+                                <img src="https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/310ad08c-bb06-4305-134a-0069e7fa4300/86" alt="Ladies New Look Super Skinny Blue Jeans" class="sale-logo">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">Bills Inclusive Lovely Studio, Central London / Kilburn</h5>
+                                    <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <p class="card-text">Private | Date available: 15 Oct 2024 | House | 3 Beds <br>Bradford, West Yorkshire</p>
+                                <p class="card-text"><small class="text-muted">Epsom, Surrey</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">£6</span>
+                                    <span class="product-time">Just now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="product-image">
+                                <img src="https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/4b9160a8-9109-4cdc-860d-0f1ddbca6700/86" alt="Elegant Sofa" class="sale-logo">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h5 class="card-title">Room for rent</h5>
+                                    <button class="favorite-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <p class="card-text">Private | Date available: 15 Oct 2024 | House | 3 Beds <br>Bradford, West Yorkshire</p>
+                                <p class="card-text"><small class="text-muted">Manchester</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="product-price">£330</span>
+                                    <span class="product-time">Just now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <footer class="text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">About Us</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light hover:text-white">About Fennec</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white"
+                  >Advertise With Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Careers</a>
+              </li>
+              <li><a href="#" class="text-light hover:text-white">Media</a></li>
+              <li><a href="#" class="text-light hover:text-white">Press</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">Help & Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light hover:text-white">FAQs</a></li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Safety</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Policies</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">More From Us</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light hover:text-white">Car Guides</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Fennec Life</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Car Reviews</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white">Sell My Car</a>
+              </li>
+              <li>
+                <a href="#" class="text-light hover:text-white"
+                  >Upcycle Revolution</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h4 class="text-white font-weight-bold">Mobile Apps</h4>
+            <div>
+              <a href="#" class="d-block mb-2 ggle-tag-img">
+                <img
+                  src="/asset/app-store-logo.jpg"
+                  alt="Download on the App Store"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </a>
+              <a href="#" class="d-block mb-2 ggle-tag-img">
+                <img
+                  src="/asset/google-play-logo.png"
+                  alt="Get it on Google Play"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </a>
+            </div>
+            <a href="#" class="d-block mt-2 text-light hover:text-white"
+              >More About Our Apps</a
+            >
+          </div>
+        </div>
+
+          <div class="mt-4 border-top border-light pt-4">
+            <div class="d-flex justify-content-between flex-wrap">
+              <div style="width: 350px">
+                <h4 class="text-white font-weight-bold">Join Fennec Community</h4>
+                <div class="d-flex space-x-3 icon-sty">
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a href="#" class="text-light hover:text-white"
+                    ><i class="fab fa-pinterest"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="motors-fen">
+                <h4 class="text-white font-weight-bold">Fennec Partners</h4>
+                <button class="btn btn-secondary">Motors</button>
+              </div>
+            </div>
+          </div>
+
+        <div class="mt-4 text-center">
+          <p>© Copyright 2000-2024 Fennec.com Limited. All rights reserved.</p>
+          <p class="mt-2">
+            Fennec.com Limited (FRN 560524) is an Appointed Representative of
+            Consumer Credit Compliance Limited who are authorised and regulated
+            by the Financial Conduct Authority (FRN 631736).
+          </p>
+          <p class="mt-2">
+            The permissions of Consumer Credit Compliance Limited as a Principal
+            firm allow Fennec.com Limited to undertake credit broking.
+            Fennec.com Limited acts as a credit broker, not a lender. We will
+            refer you to CarMoney Limited (FRN 674094) for credit. We receive a
+            fixed fee commission up to an agreed number of leads, and additional
+            commission for those above the agreed level. You will not pay more
+            as a result of our commission arrangements.
+          </p>
+          <p class="mt-2">
+            Fennec.com Limited, registered in England and Wales with number
+            03934849, 27 Old Gloucester Street, London, WC1N 3AX, United
+            Kingdom. VAT No. 345 7692 64.
+          </p>
+          <p class="mt-4">
+            <a href="TermsofUse.html" class="text-light hover:text-white">Terms of Use</a> |
+            <a href="#" class="text-light hover:text-white">Privacy Notice</a> |
+            <a href="#" class="text-light hover:text-white">Privacy Settings</a>
+            | <a href="CookiesPolicy.html" class="text-light hover:text-white">Cookies Policy</a>
+          </p>
+        </div>
+      </div>
+  </footer>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js/index.js"></script>
+            <script src="js/header.js"></script>
+</body>
+</html>
