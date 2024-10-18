@@ -634,9 +634,10 @@ footer {
 }
 
 .sell-section {
-  background-color: #f8f9fa;
-  padding: 40px 0;
+  background-color: #dfdbdb;
+    padding: 40px 0;
 }
+
 
 
 
@@ -929,7 +930,8 @@ body {
   font-weight: bold;
 }
 .card-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
   padding-top: 10px;
 }
 .btn-outline-primary {
