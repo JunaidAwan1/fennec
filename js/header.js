@@ -95,10 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let carVhc = document.querySelector(".car-vhcl-menu-res")
   
     crsEnd.addEventListener('click', () => {
-      remenuIn.style.display = 'none'; })
+      remenuIn.style.display = 'none';
+     
+    })
       
-  
+     
       carVhc.addEventListener('click', () => {
-      remenuIn.style.display = 'block'; })
+      remenuIn.style.display = 'block';
+    
+    })
       
   });
